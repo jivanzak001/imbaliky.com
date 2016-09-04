@@ -1,0 +1,43 @@
+
+.col-md-4 .img{
+
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #C9302C;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.col-md-4 .img img{
+
+    height: 120px;
+    min-width: 100%;
+    /*width: 100%;*/
+}
+.col-md-4 .img .overlay-img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.col-md-4 .img .overlay-img .delete-button{
+
+    position: relative;
+    top: 40px;
+    left: 30px;
+   
+}
+.col-md-4 .img:hover .overlay-img{
+
+    opacity: 1;
+}
